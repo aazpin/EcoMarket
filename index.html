@@ -35,5 +35,25 @@
         </div>
     </nav>
 
+    <!-- Criterio 1: Accesibilidad -->
+    <a href="#main-content" class="visually-hidden-focusable">Saltar al contenido principal</a>
+
+    <!-- Contenedor principal -->
+    <main class="container my-5" id="main-content">
+        <h1 class="text-center mb-4">Bienvenidos a EcoMarket</h1>
+
+        <!-- Criterio 2: Input de búsqueda para JavaScript -->
+        <div class="row mb-4">
+            <div class="col-md-6 mx-auto">
+                <input type="text" id="buscador" class="form-control" placeholder="Buscar productos ecológicos...">
+            </div>
+        </div>
+
+        <!-- Aquí se inyectarán las tarjetas con JS -->
+        <div id="catalogo-contenedor" class="row g-4">
+            <!-- Las cards irán aquí -->
+        </div>
+    </main>
+    
 </body>
 </html>
