@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -52,6 +53,101 @@
         <div id="catalogo-contenedor" class="row g-4">
             <!-- Las cards irán aquí -->
         </div>
+
+        <!-- INICIO DE MI PARTE: CONTACTO CON BOOTSTRAP -->
+
+        <section id="contacto" class="mt-5 p-4 bg-white rounded shadow-sm">
+
+            <h2 class="text-center text-success mb-4">
+                Contáctanos
+            </h2>
+
+            <p class="text-center mb-4">
+                ¿Tienes alguna consulta sobre nuestros productos ecológicos?
+                Escríbenos mediante el siguiente formulario.
+            </p>
+
+            <form id="formulario-contacto">
+
+                <div class="row g-3">
+
+                    <div class="col-md-6">
+                        <label for="nombre" class="form-label">
+                            Nombre completo
+                        </label>
+                        <input type="text"
+                               class="form-control"
+                               id="nombre"
+                               name="nombre"
+                               placeholder="Ingrese su nombre"
+                               required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="correo" class="form-label">
+                            Correo electrónico
+                        </label>
+                        <input type="email"
+                               class="form-control"
+                               id="correo"
+                               name="correo"
+                               placeholder="Ingrese su correo"
+                               required>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="asunto" class="form-label">
+                            Asunto
+                        </label>
+                        <input type="text"
+                               class="form-control"
+                               id="asunto"
+                               name="asunto"
+                               placeholder="Ingrese el asunto"
+                               required>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="mensaje" class="form-label">
+                            Mensaje
+                        </label>
+                        <textarea class="form-control"
+                                  id="mensaje"
+                                  name="mensaje"
+                                  rows="4"
+                                  placeholder="Escriba su mensaje"
+                                  required></textarea>
+                    </div>
+
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-success px-5">
+                            Enviar mensaje
+                        </button>
+                    </div>
+
+                </div>
+
+            </form>
+
+            <p id="aviso-contacto"
+               class="text-center mt-3"
+               role="status"
+               aria-live="polite"></p>
+
+        </section>
+
+        <script>
+            document.getElementById("formulario-contacto")
+                .addEventListener("submit", function(evento) {
+                    evento.preventDefault();
+
+                    document.getElementById("aviso-contacto")
+                        .textContent =
+                        "Formulario de demostración: " +
+                        "el mensaje no se ha enviado.";
+                });
+        </script>
+
     </main>
 
     <!-- Bootstrap JS (Necesario para el menú móvil) -->
