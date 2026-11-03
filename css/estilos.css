@@ -1,0 +1,77 @@
+
+/* CRITERIO 3 - BOOTSTRAP */
+/* Estilos personalizados de EcoMarket */
+
+/* Barra de navegación */
+.navbar {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+.navbar-brand {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.navbar .nav-link {
+    font-weight: 500;
+}
+
+/* Tarjetas de productos Bootstrap */
+#catalogo-contenedor .card {
+    border: 1px solid #dce8df;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#catalogo-contenedor .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+#catalogo-contenedor .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+#catalogo-contenedor .card-title {
+    color: #198754;
+    font-weight: bold;
+}
+
+/* Formulario de contacto */
+#contacto {
+    border: 1px solid #e0e9e0;
+    border-radius: 12px;
+}
+
+#contacto .form-label {
+    font-weight: 600;
+}
+
+#contacto .form-control {
+    border-radius: 8px;
+}
+
+#contacto .form-control:focus {
+    border-color: #198754;
+    box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.2);
+}
+
+#contacto .btn-success {
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+/* Adaptación a pantallas pequeñas */
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.3rem;
+    }
+
+    #catalogo-contenedor .card-img-top {
+        height: 170px;
+    }
+}
